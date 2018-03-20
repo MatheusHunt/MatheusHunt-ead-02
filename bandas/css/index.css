@@ -1,0 +1,39 @@
+body {
+    color:#333333;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width:940px;
+    background-color: rgb(231, 230, 230);
+}
+p {
+    padding:0 30px;
+    text-indent:25px;
+}
+@font-face {
+    font-family:"GregorianFLF";
+    src: url("fonts/GregorianFLF.ttf");
+}
+ 
+figure {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(136, 6, 6);
+        text-align: center;
+        padding:15px;
+        margin:30px
+}
+#darkthrone1 {
+    margin-left: auto;
+    margin-right: auto;
+    width:725px;
+}
+ul#menu li {
+    display:inline;
+}
+#darkthroneLogo {
+    float: right;
+    margin:0010px 10px;
+}
+table, th, td {
+    border: 1px solid black
+}

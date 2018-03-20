@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matheus Eduardo</title>
+</head>
+
+<body>
+  <h3>Formulário de cadastro</h3>
+  
+  <form action='servidor.php' method='GET'>
+    
+    <p><b>Nome Completo:</b>
+      <input type='text'
+            name='nomeCompleto'
+            placeholder='Informe o nome completo'
+            autofocus='true'
+            required='true'>
+    </p>
+    
+    <p>
+        <b>Digite o seu e-mail:</b>
+      <input type='email' 
+            name='email' 
+            id='email' 
+            placeholder="Informe um e-mail válido"
+            autofocus='true'
+            required='true'>
+    </p>
+    
+    <p>
+        <b>Sexo:</b>
+        <input type='radio' name='sexo' id='masculino' value='m'>
+        <label for='masculino'>Masculino</label>
+        <input type='radio' name='sexo' id='feminino' value='f'>
+        <label for='feminino'>Feminino</label>
+      </p>
+    
+    <p>
+      <b>Data de Nascimento:</b>
+      <input type='date'
+            placeholder='dd/mm/aaaa'
+            name='dataNascimento'
+            required='true'
+            autofocus='true'><br>
+     </p>
+   
+    <p>
+      <b>Estilos musicais preferidos:</b>
+      <select name='estilos_music' multiple size='5'>
+        <option value='rock'>Rock</option>
+        <option value='funk'>Funk</option>
+        <option value='samba'>Samba</option>
+        <option value='pagode'>Pagode</option>
+        <option value='pop'multiple='true'>Pop</option>
+      </select>
+    </p>
+
+    <p>
+      <b>Nome de Usuário:</b>
+      <input type='text'
+            name='nomeUsuario'
+            required='true'>
+    </p>
+
+    <p>
+      <b>Senha:</b>
+      <input type='password'
+            name='senhaUsuario'
+            required='true'>
+    </p>
+    
+    <p>
+      <b>Cor preferida:</b>
+        <input required type='color'>
+    </p>
+    
+    <p>
+      <b>Quantidade de filhos:</b>
+      <input type='number' step='1' min='0' max='any'
+            name='quantFilhos'
+            required='true'>
+    </p>
+    
+    <p>
+      <b>Quantidade de veículos:</b>
+      <input type="range" min="0" max="5" step="1" list="tickmarks">
+      <datalist id="tickmarks">
+        <option value='0' label='0'>
+        <option value='1'>
+        <option value='2'>
+        <option value='3'> 
+        <option value='4'>
+        <option value='5' label='5'>
+      </datalist>
+    </p>
+
+    <p>
+      <b>Comentário sobre o site:</b>
+      <textarea cols='50' rows='10' name='comentarios'></textarea>
+    </p>
+    
+    <p>
+      <input type='checkbox' name='spam' id='spam'>
+      Desejo receber ofertas via e-mail.
+    </p>
+    <p>
+      <input type='submit'
+      value='Enviar'>
+      <input type='reset'
+      value='Limpar campos'>
+    </p>
+
+
+  </form>
+</body>
+
+</html>
